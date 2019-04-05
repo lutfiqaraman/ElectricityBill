@@ -11,7 +11,7 @@ namespace ElectricityBills
         static void Main(string[] args)
         {
             const double meterFee = 0.2;
-            const double tvFee = 1.000;
+            const double tvFee    = 1.000;
 
             double numberofRanges;
             double consumptionValue = 0;
