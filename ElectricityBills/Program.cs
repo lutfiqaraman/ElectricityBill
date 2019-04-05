@@ -64,9 +64,14 @@ namespace ElectricityBills
                 fuelDiff = (double)(meter * 10) / 1000;
             }
 
+            
             if (meter <= ranges[0])
             {
                 consumptionValue = (double)(meter * fees[0]) / 1000;
+
+                if (meter <= 53)
+                    consumptionValue = 1.75;
+                
                 meter = 0;
             }
 
